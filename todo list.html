@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="tolist.css">
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1>
+        <form id="to-do-form">
+            <input type="text" id="todoinput" placeholder="Add task to your list..">
+            <input type="hidden" id="saveindex">
+        <button type="button" id="addtaskbtn">Add Task</button>
+        <button type="button" id="savetaskbtn" style="display:none ;">Save Task</button>
+        </form>
+    </header>
+
+    <main>
+        <section class="task-list">
+            <h2>My Tasks</h2>
+
+            <div class="ul" id="addedtodolist">
+           <table class="table">
+          <tr>
+            <th scope="row"></th>
+            <td>.</td>
+            
+
+          </tr>
+           </table>
+            
+            <div class="actions">
+              
+              <button type="button" class="edit">Edit</button>
+              <button type="button" class="delete">Delete</button>
+            </div>
+              </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="todolist.js"></script>
+</body>
+</html>

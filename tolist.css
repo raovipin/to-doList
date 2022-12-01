@@ -1,0 +1,155 @@
+:root{
+    --dark:#374151;
+    --darker:#1F2937;
+    --darkest:#111827;
+    --light:#eee;
+    --pink:#ec4899;
+    --purple:#8b5cf6;
+    --grey:#6b7280;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color: var(--light);
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin:  0 auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--grey);
+}
+
+#to-do-form{
+    display: flex;
+
+}
+
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#todoinput{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    color-scheme: var(--light);
+    font-size: 1.2rem;
+    color: white;
+}
+#to-do-input::placeholder{
+    color:var(--grey)
+
+}
+#savetaskbtn{
+    color:white;
+    border-radius: 12px;
+    background-color:black;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 600; 
+}
+#savetaskbtn:hover{
+    color:black;
+    border-radius: 12px;
+    background-color:whitel;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 600; 
+}
+#addtaskbtn{
+    color:white;
+    border-radius: 12px;
+    background-color:black;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#addtaskbtn:hover{
+    color:black;
+    border-radius: 12px;
+    background-color:white;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.task-list{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin:  0 auto;
+}
+.task-list h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--grey);
+   
+}
+#tasks{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    /* border-radius: .5rem; */
+    margin-right: 1rem;
+    color-scheme: var(--light);
+    min-height: 40vh;
+   }
+   .content input{
+    font-size: 1rem;
+    color: white;
+   }
+   .ul{
+    display: block;
+     /* margin-left: 1rem; */
+
+   }
+   /* .table{
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    color-scheme: var(--light);
+    font-size: 1.2rem;
+    color: white;
+   } */
+   
+   
+  
+   .actions button {
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    margin: .5rem .3rem;
+    padding: 0.5rem;
+   
+    font-weight: 600;
+    width: 4rem;
+   }
+   .actions button:hover {
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 600;
+    margin: .5rem .3rem;
+    padding: 0.5rem;
+    width: 4rem;
+   }
